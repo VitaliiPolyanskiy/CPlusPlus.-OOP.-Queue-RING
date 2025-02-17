@@ -6,14 +6,14 @@ class Queue
 private:
 	Vector<T> data;
 public:
-	// Очистка очереди
+	// РћС‡РёСЃС‚РєР° РѕС‡РµСЂРµРґРё
 	void Clear() { data.Clear(); }
 
-	// Работа с размером очереди
+	// Р Р°Р±РѕС‚Р° СЃ СЂР°Р·РјРµСЂРѕРј РѕС‡РµСЂРµРґРё
 	int GetCount() const { return data.GetSize(); }
 	bool IsEmpty() const { return data.IsEmpty(); }
 
-	// Добавление и удаление элементов
+	// Р”РѕР±Р°РІР»РµРЅРёРµ Рё СѓРґР°Р»РµРЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ
 	void Add(const T& item);
 	void Remove(T& item);
 	void Peek(T& item);
